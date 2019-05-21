@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/src/functions.h
+iostream
+-
+vector
+-
+cassert
+-
+string
+-
+
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/src/step2_source.cpp
+functions.h
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/src/functions.h
+

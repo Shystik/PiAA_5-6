@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a8f8b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a8f8b.dir/build.make CMakeFiles/cmTC_a8f8b.dir/build
+make[1]: Entering directory '/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8f8b.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a8f8b.dir/CheckSymbolExists.c.o   -c /home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a8f8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8f8b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a8f8b.dir/CheckSymbolExists.c.o  -o cmTC_a8f8b 
+CMakeFiles/cmTC_a8f8b.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a8f8b.dir/build.make:97: recipe for target 'cmTC_a8f8b' failed
+make[1]: *** [cmTC_a8f8b] Error 1
+make[1]: Leaving directory '/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a8f8b/fast' failed
+make: *** [cmTC_a8f8b/fast] Error 2
+
+File /home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c477d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c477d.dir/build.make CMakeFiles/cmTC_c477d.dir/build
+make[1]: Entering directory '/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c477d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c477d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c477d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c477d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c477d.dir/CheckFunctionExists.c.o  -o cmTC_c477d -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c477d.dir/build.make:97: recipe for target 'cmTC_c477d' failed
+make[1]: *** [cmTC_c477d] Error 1
+make[1]: Leaving directory '/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c477d/fast' failed
+make: *** [cmTC_c477d/fast] Error 2
+
+

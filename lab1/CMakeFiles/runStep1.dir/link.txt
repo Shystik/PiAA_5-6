@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14  -rdynamic CMakeFiles/runStep1.dir/src/step1_source.cpp.o  -o runStep1 -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

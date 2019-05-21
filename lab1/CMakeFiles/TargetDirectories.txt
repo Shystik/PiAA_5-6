@@ -1,0 +1,6 @@
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/edit_cache.dir
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/rebuild_cache.dir
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/runStep2Tests.dir
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/runStep2.dir
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/runStep1.dir
+/home/shystik/Documents/piaa/1/AiSD_2019-master/lab1/CMakeFiles/runStep1Tests.dir
